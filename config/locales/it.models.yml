@@ -1,0 +1,20 @@
+it:
+  activerecord:
+    models:
+      protocol:
+        one: Protocollo
+        other: Protocolli
+      server: Server
+    attributes:
+      protocol:
+        name: Nome
+        description: Descrizione
+        servers: Server
+      server:
+        name: Nome
+        address: Indirizzo
+        protocol: Protocollo
+        protocol_default: Default nel protocollo
+    descriptions:
+      protocol: "Sezione per gestire qualsiasi tipo di protocollo di comunicazione (FTP, SSH, etc.)"
+      server: "Sezione per aggiungere e gestire server sulla rete"
