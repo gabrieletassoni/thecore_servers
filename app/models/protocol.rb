@@ -8,4 +8,10 @@ class Protocol < ApplicationRecord
     # navigation_label I18n.t('admin.settings.label')
     # navigation_icon 'fa fa-plug'
   end
+
+  RailsAdmin.config do |config|
+    config.model self.name.underscore.capitalize.classify do
+      visible false
+    end
+  end
 end

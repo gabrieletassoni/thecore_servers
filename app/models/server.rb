@@ -8,8 +8,10 @@ class Server < ApplicationRecord
     joins(:protocol).where(protocol_default: true, protocols: {name: protocol}).order(updated_at: :desc).first
   end
 
-  rails_admin do
-    navigation_label I18n.t('admin.settings.label')
-    navigation_icon 'fa fa-id-card'
+  RailsAdmin.config do |config|
+    config.model self.name.underscore.capitalize.classify do
+      navigation_label I18n.t('admin.settings.label')
+      navigation_icon 'fa fa-file'
+    end
   end
 end
