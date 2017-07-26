@@ -20,4 +20,5 @@ Gem::Specification.new do |s|
 
   # s.add_development_dependency "sqlite3"
   s.add_dependency 'thecore', '~> 1.1'
+  s.add_dependency 'iana-data', '~> 1.2'
 end
