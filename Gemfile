@@ -17,6 +17,4 @@ source 'https://www.taris.it/gems-repo' do
   gem 'thecore', '~> 1.1'
 end
 
-gem 'iana-data', '~> 0'
-
 gem 'sqlite3'
