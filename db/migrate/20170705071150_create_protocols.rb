@@ -3,7 +3,7 @@ class CreateProtocols < ActiveRecord::Migration[5.1]
     create_table :protocols do |t|
       t.string :name
       t.text :description
-      t.integer, :port, :integer
+      t.integer, :port
 
       t.timestamps
     end
